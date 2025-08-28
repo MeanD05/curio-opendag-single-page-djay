@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
+
+.logo {
+
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-left: 40px;
+
+}
+
+header {
+    background-color: #ffcc04;
+    height: 150px;
+}
+
+.navbar {
+    margin-left: 100px;
+    margin-top: -110px;
+    display: flex;
+    justify-content: center;
+    color: black;
+
+
+
+}
+
+nav a {
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+
+
+}
+
+.imgc {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+main {
+
+    margin: 50px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+    
+}
+
+#par1 {
+    padding: 20px;
+    border: 1px  black;
+    border-radius:  2px;
+    background-color: purple;
+    color: #ffcc04;
+}
+
+.flex-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.flex-row .imgc {
+    min-width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.flex-row p {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+    margin-top: 20px;
+}
+
+.vakken-blokken {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* kleiner blokje */
+    gap: 24px; /* iets minder ruimte */
+    margin-top: 30px;
+}
+
+.blok {
+    background: #fff;
+    border-left: 6px solid #ffcc04;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 18px 14px 16px 18px; /* compacter */
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 0;
+}
+
+.blok h3 {
+    margin-bottom: 8px;
+    color: #6c2eb7;
+    font-size: 1.1em;
+}
+
+.blok p {
+    color: #333;
+    font-size: 0.98em;
+}
+
+@media (max-width: 800px) {
+    .flex-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flex-row .imgc {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .vakken-blokken {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
