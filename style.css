@@ -172,6 +172,10 @@ main {
     text-decoration: none;
 }
 
+#sectie3-h2{
+    margin-top: 100px;
+}
+
 @media (max-width: 800px) {
     .flex-row {
         flex-direction: column;
