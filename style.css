@@ -24,6 +24,9 @@ body {
 header {
     background-color: #ffcc04;
     height: 150px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
 }
 
 .navbar {
