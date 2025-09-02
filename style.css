@@ -192,6 +192,55 @@ main {
     text-decoration: none;
 }
 
+.docenten-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    background: linear-gradient(90deg, #f8f8ff 70%, #e9e3f7 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(108,46,183,0.06);
+    padding: 32px 0;
+}
+
+.docent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(108,46,183,0.08);
+    padding: 18px 10px 14px 10px;
+    position: relative;
+}
+
+
+
+.docent-foto {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #6c2eb7;
+    box-shadow: 0 2px 8px rgba(108,46,183,0.10);
+    margin-bottom: 12px;
+    background: #eee;
+}
+
+
+.docent-naam {
+    text-align: center;
+    font-weight: 700;
+    color: #6c2eb7;
+    font-size: 1.08em;
+    margin: 0;
+    margin-top: 6px;
+    letter-spacing: 0.2px;
+}
+
 @media (max-width: 800px) {
     .flex-row {
         flex-direction: column;
@@ -276,5 +325,15 @@ main {
     }
     .blok p {
         font-size: 0.95em;
+    }
+    .docenten-team {
+        gap: 18px;
+    }
+    .docent {
+        width: 100px;
+    }
+    .docent-foto {
+        width: 70px;
+        height: 70px;
     }
 }
