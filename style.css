@@ -25,8 +25,6 @@ header {
     background-color: #ffcc04;
     height: 150px;
     position: sticky;
-    z-index: 999;
-    top: 0;
 }
 
 .navbar {
@@ -137,28 +135,30 @@ main {
 }
 
 .info-blok {
-    background: #f8f8ff;
+    background: linear-gradient(135deg, #f8f8ff 80%, #e9e3f7 100%);
     border-left: 6px solid #6c2eb7;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(108,46,183,0.06);
-    padding: 0 0 22px 0;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(108,46,183,0.08);
+    padding: 0 0 26px 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     min-width: 0;
     transition: box-shadow 0.2s, transform 0.2s;
     overflow: hidden;
+    position: relative;
 }
 
 .info-blok img {
     width: 100%;
-    max-height: 180px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 16px;
-    box-shadow: 0 2px 8px rgba(108,46,183,0.08);
-    background: #eee;
+    height: 260px;               
+    object-fit: contain;          
+    border-radius: 18px 18px 0 0;
+    margin-bottom: 0;
+    background: linear-gradient(90deg, #eee 60%, #e9e3f7 100%);
     display: block;
+    box-shadow: 0 2px 12px rgba(108,46,183,0.10);
+    border-bottom: 1px solid #e0d8f3;
 }
 
 .info-blok h2 {
@@ -166,13 +166,15 @@ main {
     color: #6c2eb7;
     font-size: 1.25em;
     font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .info-blok p {
     color: #222;
-    font-size: 1.05em;
+    font-size: 1.07em;
     line-height: 1.7;
     margin: 0 22px;
+    margin-top: 8px;
 }
 
 .info-blok a {
