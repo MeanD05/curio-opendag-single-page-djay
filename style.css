@@ -138,16 +138,28 @@ main {
     border-left: 6px solid #6c2eb7;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(108,46,183,0.06);
-    padding: 28px 22px 22px 28px;
+    padding: 0 0 22px 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     min-width: 0;
     transition: box-shadow 0.2s, transform 0.2s;
+    overflow: hidden;
+}
+
+.info-blok img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(108,46,183,0.08);
+    background: #eee;
+    display: block;
 }
 
 .info-blok h2 {
-    margin-bottom: 12px;
+    margin: 18px 22px 10px 22px;
     color: #6c2eb7;
     font-size: 1.25em;
     font-weight: 700;
@@ -157,6 +169,7 @@ main {
     color: #222;
     font-size: 1.05em;
     line-height: 1.7;
+    margin: 0 22px;
 }
 
 .info-blok a {
@@ -170,10 +183,6 @@ main {
 .info-blok a:hover {
     color: #6c2eb7;
     text-decoration: none;
-}
-
-#sectie3-h2{
-    margin-top: 100px;
 }
 
 @media (max-width: 800px) {
